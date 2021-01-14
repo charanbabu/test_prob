@@ -20,7 +20,6 @@ public class LRUCache {
 	private Deque<Integer> dequeue;
 	private Set<Integer> set;
 	private final int max_capacity ;
-	private HashSet<Integer> ht = new LinkedHashSet<Integer>();
 	static Map<Character,Integer> map = new HashMap<Character,Integer>();
 	static Map<Integer,Character> rmap = new HashMap<Integer,Character>();
 		
@@ -56,9 +55,9 @@ public class LRUCache {
 	
 	 public void display() {
 	        Iterator<Integer> itr = dequeue.iterator();
-	        while (itr.hasNext()) { 
-	            System.out.print(itr.next() + " "); 
-	        } 
+//	        while (itr.hasNext()) { 
+//	            System.out.print(itr.next() + " "); 
+//	        } 
 	 }
 	
 	// 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5
